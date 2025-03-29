@@ -84,7 +84,7 @@ const Navigation = ({ setCurrentPage }: NavigationProps) => {
   };
 
   return (
-    <nav className="fixed w-full bg-brand z-50">
+    <nav className="fixed w-full bg-[rgba(157,77,42,255)] z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           <div className="flex items-center">
@@ -115,7 +115,7 @@ const Navigation = ({ setCurrentPage }: NavigationProps) => {
                 }}
                 className={`px-3 py-2 text-sm font-medium ${
                   isActive('/') 
-                    ? 'text-brand bg-white rounded-md' 
+                    ? 'text-[rgba(157,77,42,255)] bg-white rounded-md' 
                     : 'text-white hover:bg-white/10 rounded-md transition-colors duration-200'
                 }`}
               >
@@ -150,8 +150,8 @@ const Navigation = ({ setCurrentPage }: NavigationProps) => {
                         onClick={handleClose}
                         className={`block px-4 py-2 text-sm ${
                           isActive(category.path)
-                            ? 'text-brand bg-brand/10'
-                            : 'text-gray-700 hover:bg-brand/10 hover:text-brand'
+                            ? 'text-[rgba(157,77,42,255)] bg-[rgba(157,77,42,0.1)]'
+                            : 'text-gray-700 hover:bg-[rgba(157,77,42,0.1)] hover:text-[rgba(157,77,42,255)]'
                         } transition-colors duration-200`}
                       >
                         {category.name}
@@ -184,7 +184,7 @@ const Navigation = ({ setCurrentPage }: NavigationProps) => {
 
       {/* Mobile menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 bg-brand border-t border-white/10">
+        <div className="px-2 pt-2 pb-3 space-y-1 bg-[rgba(157,77,42,255)] border-t border-white/10">
           <Link 
             to="/"
             onClick={() => {
@@ -193,7 +193,7 @@ const Navigation = ({ setCurrentPage }: NavigationProps) => {
             }}
             className={`block px-3 py-2 rounded-md text-base font-medium ${
               isActive('/') 
-                ? 'text-brand bg-white' 
+                ? 'text-[rgba(157,77,42,255)] bg-white' 
                 : 'text-white hover:bg-white/10'
             } transition-colors duration-200`}
           >
@@ -226,7 +226,7 @@ const Navigation = ({ setCurrentPage }: NavigationProps) => {
                   onClick={handleClose}
                   className={`block px-3 py-2 rounded-md text-sm font-medium ${
                     isActive(category.path)
-                      ? 'text-brand bg-white'
+                      ? 'text-[rgba(157,77,42,255)] bg-white'
                       : 'text-white hover:bg-white/10'
                   } transition-colors duration-200`}
                 >
