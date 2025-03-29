@@ -8,9 +8,9 @@ export default {
       },
       colors: {
         brand: {
-          DEFAULT: '#8B4513',
-          light: '#A0522D',
-          dark: '#6B3410'
+          DEFAULT: 'rgba(157,77,42,255)',
+          light: 'rgba(177,97,62,255)',
+          dark: 'rgba(137,57,22,255)'
         }
       }
     },
